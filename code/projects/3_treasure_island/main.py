@@ -48,11 +48,11 @@ def win_swim():
 def play_door():
     door = input('You arrive at the island unharmed. There is a house with 3 doors. One red, one yellow and one blue. Which colour do you choose?\n')
     if door == "red":
-        print("It's a room full of fire. Game Over.")
+        return print("It's a room full of fire. Game Over.")
     if door == "blue":
-        print("You enter a room of beasts. Game Over.")
+        return print("You enter a room of beasts. Game Over.")
     if door != "yellow":
-        print("You chose a door that doesn't exist. Game Over.")
+        return print("You chose a door that doesn't exist. Game Over.")
     print("You found the treasure! You Win!")
 
 
